@@ -35,7 +35,7 @@ Reference:
 - Test Loss: 0.0376
 
 ## Model Availability
-- Model on Hugging Face Hub: [pottery-classifier](https://huggingface.co/samanthajmichael/pottery-classifier)
+- Model on Hugging Face Hub: [pottery-classifier](https://huggingface.co/samanthajmichael/pottery_classifier)
 
 ## Using the Model
 ```python
