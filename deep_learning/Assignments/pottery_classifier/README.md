@@ -1,4 +1,4 @@
-# 🏺 Pottery Classification using Neural Network 🏺
+# 🏺 Pottery Classification using a Deep Neural Network 🏺
 
 ## Project Overview
 Multiclass classification of pottery types using a neural network on archaeological ceramic data from the Digital Archaeological Record (tDAR).
