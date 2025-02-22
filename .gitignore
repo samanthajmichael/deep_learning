@@ -169,5 +169,5 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
-#"deep_learning/Assignments/data/X_smote.npy" 
-#"deep_learning/Assignments/data/dap-tscer4.csv" 
+"deep_learning/Assignments/pottery/classifier/data/X_smote.npy" 
+"deep_learning/Assignments/pottery_classifier/data/dap-tscer4.csv" 
