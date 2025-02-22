@@ -1,4 +1,4 @@
-# Pottery Classification using Neural Network
+# 🏺 Pottery Classification using Neural Network 🏺
 
 ## Project Overview
 Multiclass classification of pottery types using a neural network on archaeological ceramic data from the Digital Archaeological Record (tDAR).
@@ -10,8 +10,9 @@ Multiclass classification of pottery types using a neural network on archaeologi
 - Pandas
 
 ## Dataset
-- Source: Digital Archaeological Record (tDAR)
-- Dataset: Ceramics: Temporal-Spatial Dataset (1988)
+The data comes from the Digital Archaeological Record's (tDAR) Ceramics: Temporal-Spatial Dataset (1988), which contains archaeological ceramic data from various sites. Through feature selection and encoding processes detailed in `01_EDA.ipynb`, the original dataset was refined to 95 relevant features for classifying 9 distinct pottery types.
+
+Reference:
 - tDAR ID: 6039
 - DOI: 10.6067/XCV8TD9WNB
 
@@ -20,6 +21,7 @@ Multiclass classification of pottery types using a neural network on archaeologi
 - Input Layer: 95 neurons
 - Hidden Layer: 64 neurons (ReLU activation)
 - Output Layer: 9 neurons (Softmax activation)
+- Batch Size: 256
 
 ## Key Techniques
 - He Weight Initialization
@@ -31,6 +33,26 @@ Multiclass classification of pottery types using a neural network on archaeologi
 ## Performance
 - Test Accuracy: 99.31%
 - Test Loss: 0.0376
+
+## Model Availability
+- Model on Hugging Face Hub: [pottery-classifier](https://huggingface.co/samanthajmichael/pottery-classifier)
+
+## Using the Model
+```python
+import tensorflow as tf
+import numpy as np
+
+# Load the model from Hugging Face Hub
+model = from_pretrained_keras("samanthajmichael/pottery-classifier")
+
+# Prepare your input data (95 features)
+# Make sure your input data is preprocessed the same way as during training
+input_data = np.array([[...]])  # Shape: (n_samples, 95) where n_samples is the number of predictions you want to make
+
+# Get predictions
+predictions = model.predict(input_data)
+```
+Note: You'll need to install the huggingface_hub package: `pip install huggingface_hub`
 
 ## Repository Structure
 - `notebooks/`: Directory containing Jupyter notebooks for EDA and Modeling 
