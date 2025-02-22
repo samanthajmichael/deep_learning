@@ -58,14 +58,15 @@ Note: You'll need to install the huggingface_hub package: `pip install huggingfa
 - `notebooks/`: Directory containing Jupyter notebooks for EDA and Modeling 
 - `01_EDA.ipynb`: Data exploration and encoding notebook
 - `02_Modeling.ipynb`: Main notebook with model architecture, training, and performance analysis 
-- `data/`: Directory containing dataset - raw files, and numpy arrays ready for analysis
+- `data/`: Directory containing dataset - raw files (dap-tscer4.csv) and numpy arrays ready for analysis. The data.zip file contains all the files you need for the analysis in a convenient downloadable format.  
 - `models/`: Trained pottery_classifier.v1.keras model
 
 ## How to Run
 1. Clone the repository
 2. Install required dependencies from requirements.txt
-3. Open desired jupyter notebook
-4. Run cells sequentially
+3. Ensure your data are in the right directories and paths have been updated accordingly
+4. Open desired jupyter notebook to either run the EDA or train the model
+5. Run cells sequentially -- Enjoy! 
 
 ## Citation
 Digital Archaeological Record. (1988). Ceramics: Temporal-Spatial Dataset (tDAR id: 6039). https://doi.org/10.6067/XCV8TD9WNB
